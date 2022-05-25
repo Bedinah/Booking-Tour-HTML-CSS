@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  padding: 1.4rem;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+  background-color: rgb(56, 77, 56);
+  box-shadow: 0 1.2rem 2.4rem rgb(2, 78, 66);
+}
+
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(68, 49, 49, 0.459),
+      rgba(66, 3, 3, 0.082)
+    ),
+    url(./images/bcgimg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.logo-img {
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 40%;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+
+  align-items: center;
+  
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: yellow;
+  background-color: rgb(0, 129, 138);
+}
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: rgb(0, 129, 138);
+  padding: 1.2rem 3.2rem;
+  border-radius: 1rem;
+  transition: all 0.8s;
+}
+.nav-btn {
+  background-color: rgba(2, 59, 82, 0.788);
+  padding: 1.2rem 3.2rem;
+  border-radius: 1rem;
+}
+.home{
+ color: rgb(143, 134, 134);
+ font-size: 2.8rem;
+ padding: 6rem;
+ text-align: center;
+ font-weight: 500;
+ padding-top: 3rem;
+ 
+}
+.home-title {
+  text-align: center;
+  color: white;
+  font-size: 4.8rem;
+  font-weight: 700;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.text {
+  width: 65%;
+  padding: 3rem;
+  margin-left: 2rem; 
+  /* margin-top: 6rem; */
+  background: #eee;
+  position: relative;
+  height: 20rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.2rem 3.2rem #000;
+}
+
+.home-paragraph {
+  color: rgb(48, 42, 42);
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.home-btn {
+  color: #fff;
+  font-size: 1.8rem;
+  display: inline-block;
+  font-weight: 700;
+  box-shadow: 0 1.2rem 3.2rem rgb(10, 2, 2);
+  position: absolute;
+  bottom: 0.3rem;
+  background-color: #0c4772;
+  padding: 1.2rem 3.2rem;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+/* About Section */
+.about-container,
+.tour-container {
+  padding: 10rem 4rem;
+}
+.title {
+  text-align: center;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #0c4772, yellow);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.video {
+  height: 400px;
+  text-align: left;
+}
+.h4 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: rgb(78, 73, 73);
+}
+.aboutparagraph {
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.parone {
+  margin-bottom: 2.8rem;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* Tour container */
+.tour-container {
+  background-color: rgb(217, 223, 223);
+  
+}
+.main-card{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+
+}
+.read-btn:link,
+.read-btn:visited{
+  display: flex;
+  
+  margin: 0rem 1rem 2rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  /* width: 30rem; */
+  background-color: white;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 1rem 1.2rem 2.4rem rgb(207, 119, 119);
+  transition: all 0.8s;
+  /* display: flex;
+  flex-direction: column; */
+
+ 
+   
+  
+}
+.card:hover{
+  transform: translate(6px ,-20px);
+  
+}
+.card-content{
+  padding: 1.5rem 3rem;
+}
+.img-card{
+ width: 100%; 
+ clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 88% 97%, 0 78%, 0 0);
+
+}
+.schedule-title{
+  font-size: 1.6rem;
+  color: red;
+}
+.schedule-date{
+  font-size: 1.6rem;
+  padding: 0rem 0rem 2rem 2rem;
+}
+.tour-title{
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(to right, #0c4772, yellow);
+  color: transparent;
+  font-weight: 900;
+  /* text-shadow: 0 1rem 2.2rem rgba(241, 150, 150, 0.459); */
+  -webkit-background-clip: text;
+}
+.tour-text{
+font-size: 1.6rem;
+padding: 1.5rem 1rem 0;
+color: rgb(168, 102, 102);
+}
+
+ 
+.place-title{
+  padding: 0rem 2.2rem 0rem 0rem;
+}
+.place-title,
+.place{
+  text-align: right;
+  font-size: 1.6rem;
+}
+.place{
+  margin-left:  0rem 1rem;
+}
+
