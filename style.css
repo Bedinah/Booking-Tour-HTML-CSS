@@ -12,15 +12,16 @@ body {
 }
 
 nav {
-  padding: 1.4rem;
+  padding: 1rem;
   display: flex;
   position: sticky;
   top: 0px;
+  left: 0px;
   width: 100%;
-  z-index: 999;
+  z-index: 1000;
   justify-content: space-between;
-  background-color: rgb(56, 77, 56);
-  box-shadow: 0 1.2rem 2.4rem rgb(2, 78, 66);
+  background-color: rgb(7, 24, 1);
+  box-shadow: 0 1rem 2.2rem rgb(62, 66, 1);
 }
 
 header {
@@ -29,7 +30,7 @@ header {
       rgba(68, 49, 49, 0.459),
       rgba(66, 3, 3, 0.082)
     ),
-    url(./images/bcgimg.jpg);
+    url(./images/ooimage2.jpeg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,9 +45,7 @@ header {
   list-style-type: none;
   display: flex;
   gap: 2rem;
-
   align-items: center;
-  
 }
 
 .nav-link:link,
@@ -76,20 +75,19 @@ header {
   padding: 1.2rem 3.2rem;
   border-radius: 1rem;
 }
-.home{
- color: rgb(143, 134, 134);
- font-size: 2.8rem;
- padding: 6rem;
- text-align: center;
- font-weight: 500;
- padding-top: 3rem;
- 
+.home {
+  color: rgb(143, 134, 134);
+  font-size: 2.8rem;
+  padding: 6rem;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 3rem;
 }
 .home-title {
   text-align: center;
-  color: white;
+  color: rgb(238, 234, 173);
   font-size: 4.8rem;
-  font-weight: 700;
+  font-weight: 900;
   padding-top: 8rem;
   padding-bottom: 4rem;
 }
@@ -97,19 +95,19 @@ header {
 .text {
   width: 65%;
   padding: 3rem;
-  margin-left: 2rem; 
-  /* margin-top: 6rem; */
-  background: #eee;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  background: rgb(238, 234, 173);
   position: relative;
   height: 20rem;
   border-radius: 0.8rem;
-  box-shadow: 0 1.2rem 3.2rem #000;
+  box-shadow: 0 1rem 2.2rem rgb(108, 116, 4);
 }
 
 .home-paragraph {
   color: rgb(48, 42, 42);
   font-size: 1.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .home-btn {
   color: #fff;
@@ -128,10 +126,12 @@ header {
 /* About Section */
 .about-container,
 .tour-container {
+  background-color: rgba(221, 223, 205, 0.336);
   padding: 10rem 4rem;
 }
 .title {
   text-align: center;
+  margin-top: 1rem;
   font-size: 4.2rem;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #0c4772, yellow);
@@ -139,13 +139,16 @@ header {
   -webkit-background-clip: text;
 }
 .container {
+  margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-.video {
-  height: 400px;
+.imaji {
+  width: 500px;
   text-align: left;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2.2rem rgb(108, 116, 4);
 }
 .h4 {
   font-size: 2.2rem;
@@ -154,7 +157,7 @@ header {
 }
 .aboutparagraph {
   font-size: 1.8rem;
-  color: #000;
+  color: rgb(32, 30, 30);
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -162,65 +165,63 @@ header {
 .parone {
   margin-bottom: 2.8rem;
   color: black;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 1px;
+  align-items: center;
 }
 
 /* Tour container */
 .tour-container {
-  background-color: rgb(217, 223, 223);
-  
+  background-color: rgb(240, 233, 204);
 }
-.main-card{
+.main-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-
 }
 .read-btn:link,
-.read-btn:visited{
+.read-btn:visited {
   display: flex;
-  
+
   margin: 0rem 1rem 2rem 1rem;
   align-items: center;
   justify-content: center;
 }
 
-.card{
-  /* width: 30rem; */
+.card {
   background-color: white;
   border-radius: 0.8rem;
   overflow: hidden;
-  box-shadow: 1rem 1.2rem 2.4rem rgb(207, 119, 119);
+  box-shadow: 1rem 1.2rem 2.4rem rgb(108, 116, 4);
   transition: all 0.8s;
-  /* display: flex;
-  flex-direction: column; */
-
- 
-   
-  
 }
-.card:hover{
-  transform: translate(6px ,-20px);
-  
+.card:hover {
+  transform: translate(6px, -20px);
 }
-.card-content{
+.card-content {
   padding: 1.5rem 3rem;
 }
-.img-card{
- width: 100%; 
- clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 88% 97%, 0 78%, 0 0);
-
+.img-card {
+  width: 100%;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    0 79%,
+    0 0
+  );
 }
-.schedule-title{
+.schedule-title {
   font-size: 1.6rem;
   color: red;
 }
-.schedule-date{
+.schedule-date {
   font-size: 1.6rem;
   padding: 0rem 0rem 2rem 2rem;
 }
-.tour-title{
+.tour-title {
   font-size: 3.2rem;
   text-transform: uppercase;
   text-align: center;
@@ -230,22 +231,110 @@ header {
   /* text-shadow: 0 1rem 2.2rem rgba(241, 150, 150, 0.459); */
   -webkit-background-clip: text;
 }
-.tour-text{
-font-size: 1.6rem;
-padding: 1.5rem 1rem 0;
-color: rgb(168, 102, 102);
+.tour-text {
+  font-size: 1.6rem;
+  padding: 1.5rem 1rem 0;
+  color: rgb(168, 102, 102);
 }
 
- 
-.place-title{
+.place-title {
   padding: 0rem 2.2rem 0rem 0rem;
 }
 .place-title,
-.place{
+.place {
   text-align: right;
   font-size: 1.6rem;
 }
-.place{
-  margin-left:  0rem 1rem;
+.place {
+  margin-left: 0rem 1rem;
+}
+.book-now {
+  padding: 5rem 4rem;
+}
+.book {
+  background-color: rgb(24, 94, 24);
+  display: flex;
+  gap: 2rem;
+}
+.min-padding-bottom {
+  padding-bottom: 2rem;
 }
 
+/* book section */
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px 15px;
+  transition: width 0.4s ease-in-out;
+  margin: 8px 40px 8px 40px;
+  border: 2px solid rgba(32, 46, 5, 0.541);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+input[type="tel"] {
+  width: 100%;
+  padding: 5px 15px;
+  transition: width 0.4s ease-in-out;
+  margin: 8px 40px 8px 40px;
+  border: 2px solid rgba(32, 46, 5, 0.541);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 5px 15px;
+  transition: width 0.4s ease-in-out;
+  margin: 8px 40px 8px 40px;
+  border: 2px solid rgba(32, 46, 5, 0.541);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+input[type="date"] {
+  width: 100%;
+  padding: 5px 15px;
+  transition: width 0.4s ease-in-out;
+  margin: 8px 40px 8px 40px;
+  border: 2px solid rgba(32, 46, 5, 0.541);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+select {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 5px 8px 40px;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(32, 46, 5, 0.541);
+  cursor: pointer;
+}
+
+input[type="button"] {
+  background-color: rgba(163, 182, 55, 0.479);
+  position: center;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 16px 30px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+fieldset {
+  background-color: rgb(234, 250, 209);
+  display: block;
+  position: center;
+  margin: 3rem 20rem 3rem 20rem;
+  padding: 5rem 8rem;
+  border: 2px groove(internal value);
+  border-radius: 0.8rem;
+}
+label {
+  display: block;
+  float: left;
+  width: 150px;
+  color: rgb(20, 29, 1);
+  font-weight: 400;
+  font-size: 18px;
+}
+label::after {
+  content: ":";
+}
