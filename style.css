@@ -299,17 +299,19 @@ label::after {
 }
 
 
-#contact .contact{
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
+  .contact-container{
+  
+  max-width:1200px ;
+  margin: 0 auto;  
 
 }
-#contact .contact-items{
-  width: 500px;
+.contact-items{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   padding: 20px;}
 
-#contact .contact-item{
+.contact-item{
   width: 80%;
   padding: 20px;
   text-align: center;
@@ -320,12 +322,12 @@ label::after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px 0px 18px 0px #0000002c;
+  box-shadow: 1rem 1.2rem 2.4rem rgb(108, 116, 4);
   transition: .3s ease box-shadow;
 }
 
-#contact .contact-item:hover{
-  box-shadow: 0px 0px 5px  0 #0000002c;
+.contact-item:hover{
+  box-shadow: 1rem 1.2rem 2.4rem rgb(108, 116, 4);
 }
 
 
